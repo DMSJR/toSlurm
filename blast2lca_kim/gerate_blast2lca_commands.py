@@ -1,6 +1,6 @@
 # Nome dos arquivos de entrada
 input_filename = 'proteinList.txt'
-file_list_filename = 'SraAccList.txt'
+file_list_filename = 'ERRList.txt'
 
 # Abre o arquivo de entrada para leitura dos accession numbers
 with open(input_filename, 'r') as infile:
