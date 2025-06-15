@@ -38,7 +38,7 @@ echo $SLURM_JOB_NODELIST\n\n"""
             # Extrai a parte relevante do nome do arquivo para usar na saída
             output_prefix = fileName.split('_')[0]
             # Cria o comando em uma única linha
-            command = (f"srun diamond blastp -q ../aligned_proteins/{output_prefix}_{protein}_proteins_aligned.faa "
+            command = (f"srun diamond blastp -q ../aligned_proteins_extra/{output_prefix}_{protein}_proteins_aligned.faa "
                        f"-d ../../nr-faa/nr_diamond "
                        f"-o {output_prefix}_{protein}_diamond_tax.tsv "
                        f"--outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore "

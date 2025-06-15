@@ -42,7 +42,7 @@ echo $SLURM_JOB_NODELIST\n\n"""
             
             for fileName in fileNames[start_idx:end_idx]:
                 output_prefix = fileName.split('_')[0]
-                command = (f"srun diamond blastp -q ../aligned_proteins/{output_prefix}_{protein}_proteins_aligned.faa "
+                command = (f"srun diamond blastp -q ../aligned_proteins_extra/{output_prefix}_{protein}_proteins_aligned.faa "
                            f"-d ../../nr-faa/nr_diamond "
                            f"-o {output_prefix}_{protein}_diamond_tax.tsv "
                            f"--outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore "
