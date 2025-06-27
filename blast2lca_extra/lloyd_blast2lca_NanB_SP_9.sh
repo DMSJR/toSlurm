@@ -1,0 +1,66 @@
+#!/bin/bash
+#SBATCH --partition=SP2
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH -J lloyd_blast2lca_NanB_SP_9.sh
+#SBATCH --mem=24042
+#SBATCH --time=172:00:00
+#OpenMP settings:
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+export OMP_PLACES=threads
+export OMP_PROC_BIND=spread
+echo $SLURM_JOB_ID
+echo $SLURM_SUBMIT_DIR
+echo $SLURM_JOB_NODELIST
+
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936140_NanB_SP_diamond_tax.txt -o SRR5936140_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936141_NanB_SP_diamond_tax.txt -o SRR5936141_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936142_NanB_SP_diamond_tax.txt -o SRR5936142_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936143_NanB_SP_diamond_tax.txt -o SRR5936143_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936144_NanB_SP_diamond_tax.txt -o SRR5936144_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936145_NanB_SP_diamond_tax.txt -o SRR5936145_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936146_NanB_SP_diamond_tax.txt -o SRR5936146_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936147_NanB_SP_diamond_tax.txt -o SRR5936147_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936148_NanB_SP_diamond_tax.txt -o SRR5936148_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936149_NanB_SP_diamond_tax.txt -o SRR5936149_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936150_NanB_SP_diamond_tax.txt -o SRR5936150_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936151_NanB_SP_diamond_tax.txt -o SRR5936151_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936152_NanB_SP_diamond_tax.txt -o SRR5936152_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936153_NanB_SP_diamond_tax.txt -o SRR5936153_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936154_NanB_SP_diamond_tax.txt -o SRR5936154_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936155_NanB_SP_diamond_tax.txt -o SRR5936155_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936156_NanB_SP_diamond_tax.txt -o SRR5936156_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936157_NanB_SP_diamond_tax.txt -o SRR5936157_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936158_NanB_SP_diamond_tax.txt -o SRR5936158_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936159_NanB_SP_diamond_tax.txt -o SRR5936159_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936160_NanB_SP_diamond_tax.txt -o SRR5936160_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936161_NanB_SP_diamond_tax.txt -o SRR5936161_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936162_NanB_SP_diamond_tax.txt -o SRR5936162_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936163_NanB_SP_diamond_tax.txt -o SRR5936163_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936164_NanB_SP_diamond_tax.txt -o SRR5936164_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936165_NanB_SP_diamond_tax.txt -o SRR5936165_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936166_NanB_SP_diamond_tax.txt -o SRR5936166_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936167_NanB_SP_diamond_tax.txt -o SRR5936167_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936168_NanB_SP_diamond_tax.txt -o SRR5936168_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936169_NanB_SP_diamond_tax.txt -o SRR5936169_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936170_NanB_SP_diamond_tax.txt -o SRR5936170_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936171_NanB_SP_diamond_tax.txt -o SRR5936171_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936172_NanB_SP_diamond_tax.txt -o SRR5936172_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936173_NanB_SP_diamond_tax.txt -o SRR5936173_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936174_NanB_SP_diamond_tax.txt -o SRR5936174_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936175_NanB_SP_diamond_tax.txt -o SRR5936175_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936176_NanB_SP_diamond_tax.txt -o SRR5936176_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936177_NanB_SP_diamond_tax.txt -o SRR5936177_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936178_NanB_SP_diamond_tax.txt -o SRR5936178_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936179_NanB_SP_diamond_tax.txt -o SRR5936179_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936180_NanB_SP_diamond_tax.txt -o SRR5936180_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936181_NanB_SP_diamond_tax.txt -o SRR5936181_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936182_NanB_SP_diamond_tax.txt -o SRR5936182_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936183_NanB_SP_diamond_tax.txt -o SRR5936183_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936184_NanB_SP_diamond_tax.txt -o SRR5936184_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936185_NanB_SP_diamond_tax.txt -o SRR5936185_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936186_NanB_SP_diamond_tax.txt -o SRR5936186_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936187_NanB_SP_diamond_tax.txt -o SRR5936187_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936188_NanB_SP_diamond_tax.txt -o SRR5936188_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
+srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/SRR5936189_NanB_SP_diamond_tax.txt -o SRR5936189_NanB_SP_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db
