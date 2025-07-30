@@ -14,13 +14,23 @@ echo $SLURM_JOB_ID
 echo $SLURM_SUBMIT_DIR
 echo $SLURM_JOB_NODELIST
 
+echo "Processando amostra: EH-MG-38_R1_megahit"
 srun Rscript virfinder_run.R ../megahit/EH-MG-38_R1_megahit/final.contigs.fa
+echo "Processando amostra: EH-MG-39_R1_megahit"
 srun Rscript virfinder_run.R ../megahit/EH-MG-39_R1_megahit/final.contigs.fa
+echo "Processando amostra: EH-MG-3_R1_megahit"
 srun Rscript virfinder_run.R ../megahit/EH-MG-3_R1_megahit/final.contigs.fa
+echo "Processando amostra: EH-MG-40_R1_megahit"
 srun Rscript virfinder_run.R ../megahit/EH-MG-40_R1_megahit/final.contigs.fa
+echo "Processando amostra: EH-MG-41_R1_megahit"
 srun Rscript virfinder_run.R ../megahit/EH-MG-41_R1_megahit/final.contigs.fa
+echo "Processando amostra: EH-MG-42_R1_megahit"
 srun Rscript virfinder_run.R ../megahit/EH-MG-42_R1_megahit/final.contigs.fa
+echo "Processando amostra: EH-MG-43_R1_megahit"
 srun Rscript virfinder_run.R ../megahit/EH-MG-43_R1_megahit/final.contigs.fa
+echo "Processando amostra: EH-MG-44_R1_megahit"
 srun Rscript virfinder_run.R ../megahit/EH-MG-44_R1_megahit/final.contigs.fa
+echo "Processando amostra: EH-MG-45_R1_megahit"
 srun Rscript virfinder_run.R ../megahit/EH-MG-45_R1_megahit/final.contigs.fa
+echo "Processando amostra: EH-MG-46_R1_megahit"
 srun Rscript virfinder_run.R ../megahit/EH-MG-46_R1_megahit/final.contigs.fa
