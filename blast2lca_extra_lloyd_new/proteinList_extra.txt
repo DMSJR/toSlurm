@@ -1,0 +1,6 @@
+NanA_SP
+NanB_PM
+NanB_SP
+NanH
+NanT
+SiaM
