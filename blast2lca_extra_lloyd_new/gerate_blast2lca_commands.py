@@ -38,7 +38,7 @@ echo $SLURM_JOB_NODELIST\n\n"""
             # Extrai a parte relevante do nome do arquivo para usar na saída
             output_prefix = fileName.split('_')[0]
             # Cria o comando em uma única linha
-            command = (f"srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax/{output_prefix}_{protein}_diamond_tax.txt -o {output_prefix}_{protein}_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db\n")
+            command = (f"srun /temporario2/dmarques/megan/tools/blast2lca -i ../diamond_tax_extra/{output_prefix}_{protein}_diamond_tax.txt -o {output_prefix}_{protein}_blast2lca.txt --mapDB /temporario2/dmarques/blast2lca/megan-map-Feb2022.db\n")
 
             # Escreve o comando no arquivo de saída
             outfile.write(command)
